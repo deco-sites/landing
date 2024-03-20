@@ -20,9 +20,9 @@
     "seo": {
       "type": "website",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Landing",
+      "title": "Storefront",
       "jsonLDs": [],
-      "canonical": "https://landing.deco.site",
+      "canonical": "https://fashion.deco.site",
       "noIndexing": false,
       "description": "Improve your page performance with deco.cx",
       "titleTemplate": "%s | deco.cx",
@@ -62,5 +62,33 @@
       ],
       "__resolveType": "$live/handlers/routesSelection.ts"
     }
+  },
+  "Intro Deco": {
+    "links": [
+      {
+        "href": "https://twitter.com/decocx_commerce",
+        "title": "Twitter"
+      },
+      {
+        "href": "https://www.linkedin.com/company/deco-cx/?originalSubdomain=br",
+        "title": "LinkedIn"
+      },
+      {
+        "href": "http://github.com/deco-cx",
+        "title": "Github"
+      }
+    ],
+    "picture": "https://media.licdn.com/dms/image/D4D0BAQHBdzRnagoSUg/company-logo_200_200/0/1682012307830?e=2147483647&v=beta&t=rA3XxMn_rYI2MZTJS3FoLUodnOKCSTowLjK46tW58uM",
+    "headline": "deco.cx",
+    "introduction": "<p><a href=\"deco.cx\" target=\"_blank\">deco.cx</a> is the best way for you to build your site</p>",
+    "__resolveType": "deco-sites/landing/sections/Intro.tsx"
+  },
+  "SEO Default": {
+    "type": "website",
+    "image": "https://www.deco.cx/decocx-meta-en.png",
+    "title": "Start by deco.cx",
+    "description": "This is a site template for deco.cx",
+    "__resolveType": "deco-sites/std/sections/SEO.tsx",
+    "titleTemplate": "%s | Start by deco.cx"
   }
 }
