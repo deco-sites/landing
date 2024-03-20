@@ -1,1 +1,1 @@
-{"name":"Home","path":"/","sections":[{"__resolveType":"deco-sites/landing/sections/Hero.tsx"}],"__resolveType":"website/pages/Page.tsx"}
+{"name":"Home","path":"/","sections":[{"__resolveType":"deco-sites/landing/sections/Hero.tsx"},{"__resolveType":"deco-sites/landing/sections/Footer.tsx"}],"__resolveType":"website/pages/Page.tsx"}
