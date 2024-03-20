@@ -6,9 +6,9 @@
     "seo": {
       "type": "website",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Landing",
+      "title": "Storefront",
       "jsonLDs": [],
-      "canonical": "https://landing.deco.site",
+      "canonical": "https://fashion.deco.site",
       "noIndexing": false,
       "description": "Improve your page performance with deco.cx",
       "titleTemplate": "%s | deco.cx",
@@ -29,24 +29,29 @@
     "__resolveType": "deco-sites/landing/apps/site.ts",
     "firstByteThresholdMS": false
   },
-  "routes": {
-    "_middleware": {
-      "state": [],
-      "__resolveType": "$live/loaders/state.ts"
-    },
-    "[...catchall]": {
-      "audiences": [
-        {
-          "__resolveType": "everyone"
-        },
-        {
-          "__resolveType": "everyone"
-        },
-        {
-          "__resolveType": "everyone"
-        }
-      ],
-      "__resolveType": "$live/handlers/routesSelection.ts"
-    }
+  "Preview Sections MyHero": {
+    "name": "works!",
+    "__resolveType": "deco-sites/landing/sections/myHero.tsx"
+  },
+  "pages-home-5afd25174424": {
+    "name": "Home",
+    "path": "/",
+    "sections": [
+      {
+        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-Landing-945097": {
+    "sections": [
+      {
+        "__resolveType": "deco-sites/landing/sections/myHero.tsx",
+        "name": "works!"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx",
+    "name": "Landing",
+    "path": "/landing"
   }
 }
