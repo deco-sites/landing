@@ -86,7 +86,7 @@ export default function BlogPosts({
             {cta?.text}
           </a>
         </div>
-        <div class="md:grid md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {posts?.map((post) => (
             <div class="border border-secondary rounded-lg overflow-hidden">
               <Image
