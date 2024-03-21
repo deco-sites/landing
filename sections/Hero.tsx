@@ -9,9 +9,7 @@ export interface CTA {
 }
 
 export interface Props {
-  /**
-   * @format html
-   */
+  /** @format html */
   title?: string;
   description?: string;
   image?: ImageWidget;
