@@ -137,7 +137,7 @@
     },
     "buttonStyle": {
       "--border-btn": "1px",
-      "--rounded-btn": "0.2rem",
+      "--rounded-btn": "0.8rem",
       "--animation-btn": "0.25s",
       "--btn-text-case": "normal-case",
       "--btn-focus-scale": "0.95"
