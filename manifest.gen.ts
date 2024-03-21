@@ -2,29 +2,6 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-<<<<<<< HEAD
-import * as $$$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$$$$$0 from "./sections/BlogPosts.tsx";
-import * as $$$$$$$1 from "./sections/Footer.tsx";
-import * as $$$$$$$2 from "./sections/Hero.tsx";
-import * as $$$$$$$3 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$$4 from "./sections/Nav.tsx";
-import * as $$$$$$$5 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$6 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$7 from "./sections/Theme/Theme.tsx";
-
-const manifest = {
-  "sections": {
-    "deco-sites/landing/sections/BlogPosts.tsx": $$$$$$$0,
-    "deco-sites/landing/sections/Footer.tsx": $$$$$$$1,
-    "deco-sites/landing/sections/Hero.tsx": $$$$$$$2,
-    "deco-sites/landing/sections/ImageWithParagraph.tsx": $$$$$$$3,
-    "deco-sites/landing/sections/Nav.tsx": $$$$$$$4,
-    "deco-sites/landing/sections/ParagraphList.tsx": $$$$$$$5,
-    "deco-sites/landing/sections/SimpleTextList.tsx": $$$$$$$6,
-    "deco-sites/landing/sections/Theme/Theme.tsx": $$$$$$$7,
-=======
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
@@ -35,7 +12,8 @@ import * as $$$$$$4 from "./sections/ImageWithParagraph.tsx";
 import * as $$$$$$5 from "./sections/Nav.tsx";
 import * as $$$$$$6 from "./sections/ParagraphList.tsx";
 import * as $$$$$$7 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$8 from "./sections/Slide.tsx";
+import * as $$$$$$9 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -47,12 +25,12 @@ const manifest = {
     "deco-sites/landing/sections/Nav.tsx": $$$$$$5,
     "deco-sites/landing/sections/ParagraphList.tsx": $$$$$$6,
     "deco-sites/landing/sections/SimpleTextList.tsx": $$$$$$7,
-    "deco-sites/landing/sections/Theme/Theme.tsx": $$$$$$8,
->>>>>>> Add Faq
+    "deco-sites/landing/sections/Slide.tsx": $$$$$$8,
+    "deco-sites/landing/sections/Theme/Theme.tsx": $$$$$$9,
   },
   "apps": {
-    "deco-sites/landing/apps/decohub.ts": $$$$$$$$$$$$0,
-    "deco-sites/landing/apps/site.ts": $$$$$$$$$$$$1,
+    "deco-sites/landing/apps/decohub.ts": $$$$$$$$$$$0,
+    "deco-sites/landing/apps/site.ts": $$$$$$$$$$$1,
   },
   "name": "deco-sites/landing",
   "baseUrl": import.meta.url,
