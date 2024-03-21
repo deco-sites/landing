@@ -1,6 +1,13 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
+export interface CTA {
+  id?: string;
+  href: string;
+  text: string;
+  style?: "Outline" | "Ghost";
+}
+
 export interface Props {
   title?: string;
   /**
@@ -10,10 +17,7 @@ export interface Props {
   tagline?: string;
   image?: ImageWidget;
   placement?: "left" | "right";
-  cta?: {
-    href?: string;
-    text?: string;
-  };
+  cta?: CTA[];
   disableSpacing?: {
     top?: boolean;
     bottom?: boolean;
@@ -35,7 +39,10 @@ export default function ImageWithParagraph({
   image = DEFAULT_IMAGE,
   placement = "left",
   disableSpacing,
-  cta,
+  cta = [
+    { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
+    { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
+  ],
 }: Props) {
   return (
     <div class="lg:container md:max-w-6xl md:mx-auto mx-5 text-sm">
@@ -65,14 +72,27 @@ export default function ImageWithParagraph({
           <p class="leading-normal">
             {description}
           </p>
-          {cta?.href && cta?.text && (
-            <a
-              class="pt-4 flex gap-2 border-none text-secondary transition-colors duration-200 cursor-pointer"
-              href={cta.href}
-            >
-              <span>{cta.text}</span>
-            </a>
-          )}
+          <div class="flex gap-3 pt-4">
+            {cta?.map((item) => (
+              <a
+                key={item?.id}
+                id={item?.id}
+                href={item?.href}
+                target={item?.href.includes("http") ? "_blank" : "_self"}
+                class={`font-normal btn btn-primary
+                  ${!item.style || item.style == "Outline" && "btn-outline"}
+                  ${item.style == "Ghost" && "btn-ghost"}
+                `}
+              >
+                {item?.text}
+                {item.style == "Ghost" && (
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.70697 16.9767L15.414 11.2697L9.70697 5.56274L8.29297 6.97674L12.586 11.2697L8.29297 15.5627L9.70697 16.9767Z" fill="#18181B"/>
+                  </svg>
+                )}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
