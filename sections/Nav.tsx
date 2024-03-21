@@ -96,7 +96,7 @@ export default function Nav({
           &nbsp;
         </div>
         <div class="duration-500 fixed h-full overflow-y-auto overscroll-y-none peer-checked:translate-x-0 right-0 top-0 transition translate-x-full w-full z-40">
-          <div class="bg-white flex flex-col float-right gap-8 min-h-full pt-12 px-6 shadow-2xl w-1/2">
+          <div class="bg-base-100 flex flex-col float-right gap-8 min-h-full pt-12 px-6 shadow-2xl w-1/2">
             <ul class="flex flex-col gap-8">
               {links.map((link) => (
                 <li>
