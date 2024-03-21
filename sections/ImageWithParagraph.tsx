@@ -10,9 +10,7 @@ export interface CTA {
 
 export interface Props {
   title?: string;
-  /**
-   * @format textarea
-   */
+  /** @format textarea */
   description?: string;
   tagline?: string;
   image?: ImageWidget;
