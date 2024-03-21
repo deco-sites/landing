@@ -1,53 +1,95 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
+export interface CTA {
+  id?: string;
   href: string;
+  text: string;
+  outline?: boolean;
 }
 
 export interface Props {
-  logo?: ImageWidget;
+  /**
+   * @format html
+   */
   title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
+  description?: string;
+  image?: ImageWidget;
+  placement?: "left" | "right";
+  cta?: CTA[];
 }
 
-export default function Hero({
-  title = "deco.cx",
-  logo = "/logo.svg",
-  headline =
-    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
-  links = [
-    { title: "Official website", "href": "https://deco.cx/" },
-    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
-    { title: "Discord", "href": "https://deco.cx/discord" },
+const PLACEMENT = {
+  left: "flex-col text-left lg:flex-row-reverse",
+  right: "flex-col text-left lg:flex-row",
+};
+
+export default function HeroFlats({
+  title = "Click here to tweak this text however you want.",
+  description = "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  image,
+  placement = "left",
+  cta = [
+    { id: "change-me-1", href: "/", text: "Change me", outline: false },
+    { id: "change-me-2", href: "/", text: "Change me", outline: true },
   ],
 }: Props) {
   return (
-    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
-      <div class="mb-10 md:mb-20">
-        <img
-          class="object-cover w-20"
-          src={logo}
-          alt={title}
-        />
+    <div>
+      <div class="mx-auto flex flex-col items-center gap-8">
+        <div
+          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+            image
+              ? PLACEMENT[placement]
+              : "flex-col items-center justify-center text-center"
+          } lg:py-36 gap-12 md:gap-20 items-center`}
+        >
+          {image && (
+            <Image
+              width={640}
+              class="w-full lg:w-1/2 object-fit"
+              sizes="(max-width: 640px) 100vw, 30vw"
+              src={image}
+              alt={image}
+              decoding="async"
+              loading="lazy"
+            />
+          )}
+          <div
+            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
+              image
+                ? "lg:w-1/2 lg:max-w-xl"
+                : "flex flex-col items-center justify-center lg:max-w-3xl"
+            }`}
+          >
+            <div
+              class="inline-block text-[80px] leading-[100%] font-medium tracking-[-2.4px]"
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            >
+            </div>
+            <p class="text-lg md:text-md leading-[150%]">
+              {description}
+            </p>
+            <div class="flex items-center gap-3">
+              {cta?.map((item) => (
+                <a
+                  key={item?.id}
+                  id={item?.id}
+                  href={item?.href}
+                  target={item?.href.includes("http") ? "_blank" : "_self"}
+                  class={`font-normal btn btn-primary ${
+                    item.outline && "btn-outline"
+                  }`}
+                >
+                  {item?.text}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="font-bold text-3xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
-        {headline}
-      </div>
-      {!!links?.length && (
-        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title }) => (
-            <li>
-              <a target="_blank" href={href} aria-label={title} class="link">
-                {title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </header>
+    </div>
   );
 }
