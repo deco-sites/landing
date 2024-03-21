@@ -71,7 +71,7 @@ export default function Slide({
   });
   return (
     <div class="flex flex-col gap-6">
-      <p class="text-center">{title}</p>
+      <p class="text-center text-lg leading-7">{title}</p>
       <div class="bg-secondary relative w-full overflow-hidden h-11">
         <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-11">
           {slideContent}
