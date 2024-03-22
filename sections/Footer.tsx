@@ -1,3 +1,6 @@
+import Image from "apps/website/components/Image.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+
 export interface Column {
   title: string;
   items: Items[];
@@ -21,7 +24,10 @@ export interface Social {
 }
 
 export interface Props {
-  logo?: string;
+  logo?: {
+    src?: ImageWidget;
+    alt?: string;
+  };
   links?: Column[];
   subscribe?: Subscribe;
   copyright?: string;
@@ -30,7 +36,11 @@ export interface Props {
 }
 
 export default function Footer({
-  logo = "",
+  logo = {
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+    alt: "Logo",
+  },
   links = [
     { title: "Column One", items: [ { label: "Link One", href: "/" }, { label: "Link Two", href: "/" }, { label: "Link Three", href: "/" }, { label: "Link Four", href: "/" }, { label: "Link Five", href: "/" }, ] },
     { title: "Column Two", items: [ { label: "Link Six", href: "/" }, { label: "Link Seven", href: "/" }, { label: "Link Eight", href: "/" }, { label: "Link Nine", href: "/" }, { label: "Link Ten", href: "/" }, ] },
@@ -60,18 +70,7 @@ export default function Footer({
       <div class="flex flex-col gap-20">
         <div class="flex flex-col lg:flex-row justify-between gap-6">
           <div>
-            {
-              logo ? (
-                <></>
-              ) : (
-                <svg width="63" height="28" viewBox="0 0 63 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.564453 21.0273H13.2485V17.4713H5.10045V1.00735H0.564453V21.0273Z" fill="#18181B"/>
-                  <path d="M21.5869 18.2554C19.2909 18.2554 18.0029 16.5754 18.0029 13.7754V13.5514C18.0029 10.7514 19.3469 9.12736 21.5869 9.12736C23.8549 9.12736 25.1709 10.8074 25.1709 13.6074V13.8034C25.1709 16.5754 23.8549 18.2554 21.5869 18.2554ZM21.5589 21.3354C25.9549 21.3354 29.2869 18.3954 29.2869 13.7754V13.5514C29.2869 8.98736 25.9829 6.04736 21.5869 6.04736C17.1909 6.04736 13.8589 9.04336 13.8589 13.6354V13.8594C13.8589 18.4234 17.1909 21.3354 21.5589 21.3354Z" fill="#18181B"/>
-                  <path d="M37.665 26.4314C42.481 26.4314 45.3649 24.2194 45.3929 19.8794V6.38336H41.361V8.56736C40.521 7.08336 39.0929 6.04736 36.7129 6.04736C33.0729 6.04736 30.2729 8.98736 30.2729 13.1874V13.3834C30.2729 17.7234 33.1009 20.3834 36.6569 20.3834C38.8129 20.3834 40.549 19.0954 41.361 17.6674V19.8794C41.361 22.1754 40.129 23.4634 37.665 23.4634C35.593 23.4634 34.669 22.6234 34.417 21.3354H30.3849C30.7769 24.3594 32.933 26.4314 37.665 26.4314ZM37.861 17.3314C35.845 17.3314 34.417 15.8194 34.417 13.3834V13.1594C34.417 10.7514 35.677 9.12736 37.945 9.12736C40.1569 9.12736 41.4729 10.6394 41.4729 13.1314V13.3274C41.4729 15.8194 39.989 17.3314 37.861 17.3314Z" fill="#18181B"/>
-                  <path d="M54.9619 18.2554C52.6659 18.2554 51.3779 16.5754 51.3779 13.7754V13.5514C51.3779 10.7514 52.7219 9.12736 54.9619 9.12736C57.2299 9.12736 58.5459 10.8074 58.5459 13.6074V13.8034C58.5459 16.5754 57.2299 18.2554 54.9619 18.2554ZM54.9339 21.3354C59.3299 21.3354 62.6619 18.3954 62.6619 13.7754V13.5514C62.6619 8.98736 59.3579 6.04736 54.9619 6.04736C50.5659 6.04736 47.2339 9.04336 47.2339 13.6354V13.8594C47.2339 18.4234 50.5659 21.3354 54.9339 21.3354Z" fill="#18181B"/>
-                </svg>
-              )
-            }
+            <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
           </div>
           <div class="flex gap-9">
             {links?.map((link) => (
