@@ -46,7 +46,7 @@ const lineStyles = [
   "peer-checked:-translate-y-[0.2rem] peer-checked:-rotate-[45deg]",
 ];
 
-export default function Nav({
+export default function Haader({
   logo = {
     src:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
@@ -55,9 +55,9 @@ export default function Nav({
   navigation = {
     links: [
       { label: "Home", url: "/" },
-      { label: "About us", url: "/about" },
-      { label: "Princing", url: "/pricing" },
-      { label: "Contact", url: "/contact" },
+      { label: "About us", url: "/" },
+      { label: "Princing", url: "/" },
+      { label: "Contact", url: "/" },
     ],
     buttons: [
       { id: "change-me-1", href: "/", text: "Change me", outline: false },
@@ -66,7 +66,7 @@ export default function Nav({
   },
 }: Nav) {
   return (
-    <nav class="lg:container md:max-w-6xl md:mx-auto mx-5">
+    <nav class="lg:container md:max-w-6xl lg:mx-auto mx-4">
       <div class="flex gap-8 items-center justify-between py-4">
         <a href="/">
           <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />

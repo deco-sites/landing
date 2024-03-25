@@ -66,7 +66,7 @@ export default function Footer({
   ]
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl md:mx-auto mx-5 text-sm pt-16">
+    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm pt-16">
       <div class="flex flex-col gap-20">
         <div class="flex flex-col lg:flex-row justify-between gap-6">
           <div>

@@ -33,8 +33,8 @@ export default function HeroFlats({
   ],
 }: Props) {
   return (
-    <div>
-      <div class="mx-auto flex flex-col items-center gap-8">
+    <nav class="lg:container lg:mx-auto mx-4">
+      <div class="flex flex-col items-center gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
             image
@@ -88,6 +88,6 @@ export default function HeroFlats({
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
