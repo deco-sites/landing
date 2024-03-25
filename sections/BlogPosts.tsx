@@ -66,10 +66,10 @@ export default function BlogPosts({
     <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm py-12 lg:py-28">
       <div class="space-y-16">
         <div class="flex flex-col lg:flex-row gap-4 justify-between">
-          <div class="space-y-6 lg:w-3/5">
-            <p class="text-4xl leading-snug">
+          <div class="space-y-6 lg:w-1/2">
+            <h2 class="text-4xl leading-snug">
               {title}
-            </p>
+            </h2>
             <p class="text-lg">
               {description}
             </p>

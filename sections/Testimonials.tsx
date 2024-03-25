@@ -198,12 +198,12 @@ function Carousel(props: Props) {
   return (
     <div
       id={id}
-      class="min-h-min flex flex-col lg:container md:max-w-6xl md:mx-auto"
+      class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28"
     >
-      <h2 class="lg:text-5xl text-3xl pl-6 lg:pl-16 lg:w-1/2 pb-12 lg:pb-20">
+      <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
         {title}
       </h2>
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6 px-6 lg:px-16">
+      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
         {slides?.map((slide, index) => {
           let params = {};
           if (slide.content && "description" in slide.content) {
@@ -223,7 +223,7 @@ function Carousel(props: Props) {
         })}
       </Slider>
 
-      <div class="flex justify-between pt-8 px-6 lg:px-16">
+      <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
       </div>
