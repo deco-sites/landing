@@ -6,12 +6,13 @@
     "seo": {
       "type": "website",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Storefront",
+      "title": "Landing",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/1a2a71f9-a821-44ca-bf67-6558336dbefc",
       "jsonLDs": [],
       "canonical": "https://fashion.deco.site",
       "noIndexing": false,
       "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "%s | deco.cx",
+      "titleTemplate": "Landing | deco.cx",
       "descriptionTemplate": "%s | Deco.cx"
     },
     "global": [],
@@ -75,23 +76,37 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "deco-sites/landing/sections/Nav.tsx"
+        "__resolveType": "Vanilla"
       },
       {
-        "__resolveType": "Vanilla"
+        "title": "Landing",
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b",
+        "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Header.tsx"
       },
       {
         "__resolveType": "deco-sites/landing/sections/Hero.tsx"
       },
       {
+        "__resolveType": "deco-sites/landing/sections/Logos.tsx"
+      },
+      {
         "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx",
-        "placement": "right"
+        "placement": "right",
+        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
       },
       {
         "__resolveType": "deco-sites/landing/sections/BlogPosts.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Testimonials.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Faq.tsx"
       },
       {
         "__resolveType": "deco-sites/landing/sections/Footer.tsx"
@@ -137,7 +152,7 @@
     },
     "buttonStyle": {
       "--border-btn": "1px",
-      "--rounded-btn": "0.8rem",
+      "--rounded-btn": "0.2rem",
       "--animation-btn": "0.25s",
       "--btn-text-case": "normal-case",
       "--btn-focus-scale": "0.95"
@@ -230,5 +245,9 @@
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "Faq - default": {
+    "title": "FAQs",
+    "__resolveType": "deco-sites/landing/sections/Faq.tsx"
   }
 }
