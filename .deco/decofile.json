@@ -1,118 +1,21 @@
 {
-  "decohub": {
-    "__resolveType": "deco-sites/landing/apps/decohub.ts"
+  "Faq - default": {
+    "title": "FAQs",
+    "__resolveType": "deco-sites/landing/sections/Faq.tsx"
   },
-  "site": {
-    "seo": {
-      "type": "website",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-      "title": "Landing",
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/1a2a71f9-a821-44ca-bf67-6558336dbefc",
-      "jsonLDs": [],
-      "canonical": "https://fashion.deco.site",
-      "noIndexing": false,
-      "description": "Improve your page performance with deco.cx",
-      "titleTemplate": "Landing | deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
-    },
-    "global": [],
-    "routes": [
-      {
-        "__resolveType": "website/loaders/pages.ts"
+  "Preview ": {
+    "sections": {
+      "Footer.tsx": {
+        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
       },
-      {
-        "__resolveType": "website/loaders/redirects.ts"
+      "PoweredByDeco.tsx": {
+        "__resolveType": "deco-sites/landing/sections/PoweredByDeco.tsx"
       }
-    ],
-    "caching": {
-      "directives": []
-    },
-    "__resolveType": "deco-sites/landing/apps/site.ts",
-    "firstByteThresholdMS": false
+    }
   },
   "Preview Sections MyHero": {
     "name": "works!",
     "__resolveType": "deco-sites/landing/sections/myHero.tsx"
-  },
-  "pages-home-5afd25174424": {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-Landing-945097": {
-    "sections": [
-      {
-        "__resolveType": "deco-sites/landing/sections/myHero.tsx",
-        "name": "works!"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "name": "Landing",
-    "path": "/landing"
-  },
-  "pages-mynewpage-a771a8f0fda6": {
-    "name": "My New Page",
-    "path": "/example-path",
-    "sections": [
-      {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/SimpleTextList.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-testing-a5c1b57018a9": {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Vanilla"
-      },
-      {
-        "title": "Landing",
-        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b",
-        "__resolveType": "website/sections/Seo/SeoV2.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Header.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "placement": "right",
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Testimonials.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
   },
   "Vanilla": {
     "font": {
@@ -152,7 +55,7 @@
     },
     "buttonStyle": {
       "--border-btn": "1px",
-      "--rounded-btn": "0.2rem",
+      "--rounded-btn": "0.8rem",
       "--animation-btn": "0.25s",
       "--btn-text-case": "normal-case",
       "--btn-focus-scale": "0.95"
@@ -166,6 +69,49 @@
       "--animation-input": "0.2s"
     },
     "__resolveType": "deco-sites/landing/sections/Theme/Theme.tsx"
+  },
+  "decohub": {
+    "__resolveType": "deco-sites/landing/apps/decohub.ts"
+  },
+  "hero": {
+    "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+  },
+  "pages-Landing-945097": {
+    "sections": [
+      {
+        "__resolveType": "deco-sites/landing/sections/myHero.tsx",
+        "name": "works!"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx",
+    "name": "Landing",
+    "path": "/landing"
+  },
+  "pages-home-5afd25174424": {
+    "name": "Home",
+    "path": "/",
+    "sections": [
+      {
+        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-mynewpage-a771a8f0fda6": {
+    "name": "My New Page",
+    "path": "/example-path",
+    "sections": [
+      {
+        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/SimpleTextList.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
   },
   "pages-test-3c04f2690620": {
     "name": "Test",
@@ -246,8 +192,75 @@
     ],
     "__resolveType": "website/pages/Page.tsx"
   },
-  "Faq - default": {
-    "title": "FAQs",
-    "__resolveType": "deco-sites/landing/sections/Faq.tsx"
+  "pages-testing-a5c1b57018a9": {
+    "name": "Home",
+    "path": "/",
+    "sections": [
+      {
+        "__resolveType": "Vanilla"
+      },
+      {
+        "title": "Landing",
+        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b",
+        "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Header.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Logos.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+      },
+      {
+        "placement": "right",
+        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/BlogPosts.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Testimonials.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Faq.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "site": {
+    "seo": {
+      "type": "website",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
+      "title": "Landing",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/1a2a71f9-a821-44ca-bf67-6558336dbefc",
+      "jsonLDs": [],
+      "canonical": "https://fashion.deco.site",
+      "noIndexing": false,
+      "description": "Improve your page performance with deco.cx",
+      "titleTemplate": "Landing | deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    "global": [],
+    "routes": [
+      {
+        "__resolveType": "website/loaders/pages.ts"
+      },
+      {
+        "__resolveType": "website/loaders/redirects.ts"
+      }
+    ],
+    "caching": {
+      "directives": []
+    },
+    "__resolveType": "deco-sites/landing/apps/site.ts",
+    "firstByteThresholdMS": false
   }
 }

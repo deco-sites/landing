@@ -1,5 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import PoweredByDeco from "./PoweredByDeco.tsx";
 
 export interface Column {
   title: string;
@@ -51,7 +52,7 @@ export default function Footer({
     description: "Join our newsletter to stay up to date on features and releases.",
     instructions: "By subscribing you agree to with our <a href='/' target='_blank' class='link'>Privacy Policy</a> and provide consent to receive updates from our company.",
   },
-  copyright = "© 2024 deco. All rights reserved.",
+  copyright = "© 2024 deco.cx. All rights reserved.",
   bottomLinks = [
     { label: "Privacy Policy", href: "/" },
     { label: "Terms of Service", href: "/" },
@@ -94,8 +95,9 @@ export default function Footer({
             </form>
           </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-4 justify-between py-8 border-t border-primary items-center lg:items-start">
-          <div class="flex flex-col lg:flex-row gap-4 lg:gap-6 items-center lg:items-start">
+        <div class="flex flex-col lg:flex-row gap-4 justify-between py-8 border-t border-primary items-center lg:items-center">
+          <div class="flex flex-col lg:flex-row gap-4 lg:gap-6 items-center lg:items-center">
+            <a href="https://deco.cx/" target="_blank"><PoweredByDeco /></a>
             <span>{copyright}</span>
             <div class="flex gap-2 lg:gap-6 justify-between">
               {bottomLinks?.map((item) => (
