@@ -62,7 +62,7 @@ export default function Haader({
     buttons: [
       { id: "change-me-1", href: "/", text: "Change me", outline: false },
       { id: "change-me-2", href: "/", text: "Change me", outline: true },
-    ],  
+    ],
   },
 }: Nav) {
   return (
@@ -117,7 +117,11 @@ export default function Haader({
           <ul class="flex">
             {navigation.links.map((link) => (
               <li>
-                <a href={link.url} aria-label={link.label} class="link no-underline hover:underline p-4">
+                <a
+                  href={link.url}
+                  aria-label={link.label}
+                  class="link no-underline hover:underline p-4"
+                >
                   {link.label}
                 </a>
               </li>

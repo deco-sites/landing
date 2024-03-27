@@ -36,29 +36,32 @@ export default function BlogPosts({
     {
       title: "Title of blogpost #1",
       author: "Name of the author",
-      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      excerpt:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3",],
+      tags: ["Tag #1", "Tag #2", "Tag #3"],
     },
     {
       title: "Title of blogpost #2",
       author: "Name of the author",
-      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      excerpt:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3",],
+      tags: ["Tag #1", "Tag #2", "Tag #3"],
     },
     {
       title: "Title of blogpost #3",
       author: "Name of the author",
-      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+      excerpt:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: DEFAULT_IMAGE,
       date: "01 Apr 2024",
       readingTime: "10 min",
-      tags: ["Tag #1", "Tag #2", "Tag #3",],
+      tags: ["Tag #1", "Tag #2", "Tag #3"],
     },
   ],
 }: Props) {
@@ -106,7 +109,9 @@ export default function BlogPosts({
                 </div>
                 <div class="flex flex-wrap gap-2">
                   {post.tags?.map((tag) => (
-                    <div class="badge badge-lg badge-primary text-xs">{tag}</div>
+                    <div class="badge badge-lg badge-primary text-xs">
+                      {tag}
+                    </div>
                   ))}
                 </div>
                 <div class="flex flex-wrap gap-2">

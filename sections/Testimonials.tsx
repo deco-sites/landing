@@ -97,7 +97,7 @@ const DEFAULT_PROPS = {
         position: "Position, Company name",
       },
     },
-  ]
+  ],
 };
 
 function SliderItem(

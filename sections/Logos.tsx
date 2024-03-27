@@ -12,7 +12,11 @@ export interface Props {
   logos?: Logo[];
 }
 
-const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c", altText: "Logo",}));
+const IMG_PLACEHODLER = Array(30).fill(0).map(() => ({
+  src:
+    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/03fbcc78-ca86-4616-a59a-b8aa18331a9c",
+  altText: "Logo",
+}));
 
 export default function Logos({
   title = "Edit this heading however you want",
@@ -20,7 +24,7 @@ export default function Logos({
 }: Props) {
   const slideContent = (
     <div class="flex items-center gap-20">
-      {logos?.map(logo => {
+      {logos?.map((logo) => {
         return (
           <Image
             src={logo.src || ""}
@@ -28,7 +32,7 @@ export default function Logos({
             width={110}
             height={25}
           />
-        )
+        );
       })}
     </div>
   );

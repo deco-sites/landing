@@ -32,7 +32,8 @@ const DEFAULT_IMAGE =
 
 export default function ImageWithParagraph({
   title = "Here's an intermediate size heading you can edit",
-  description = "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  description =
+    "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
   tagline = "Tagline",
   image = DEFAULT_IMAGE,
   placement = "left",
@@ -86,8 +87,17 @@ export default function ImageWithParagraph({
               >
                 {item?.text}
                 {item.style == "Ghost" && (
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.70697 16.9767L15.414 11.2697L9.70697 5.56274L8.29297 6.97674L12.586 11.2697L8.29297 15.5627L9.70697 16.9767Z" fill="#18181B"/>
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.70697 16.9767L15.414 11.2697L9.70697 5.56274L8.29297 6.97674L12.586 11.2697L8.29297 15.5627L9.70697 16.9767Z"
+                      fill="#18181B"
+                    />
                   </svg>
                 )}
               </a>

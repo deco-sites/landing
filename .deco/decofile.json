@@ -1,11 +1,11 @@
 {
   "Faq - default": {
     "title": "FAQs",
-    "__resolveType": "deco-sites/landing/sections/Faq.tsx"
+    "__resolveType": "site/sections/Faq.tsx"
   },
   "Preview Sections MyHero": {
     "name": "works!",
-    "__resolveType": "deco-sites/landing/sections/myHero.tsx"
+    "__resolveType": "site/sections/myHero.tsx"
   },
   "Vanilla": {
     "font": {
@@ -58,18 +58,18 @@
       "--rounded-badge": "1.9rem",
       "--animation-input": "0.2s"
     },
-    "__resolveType": "deco-sites/landing/sections/Theme/Theme.tsx"
+    "__resolveType": "site/sections/Theme/Theme.tsx"
   },
   "decohub": {
-    "__resolveType": "deco-sites/landing/apps/decohub.ts"
+    "__resolveType": "site/apps/decohub.ts"
   },
   "hero": {
-    "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+    "__resolveType": "site/sections/Hero.tsx"
   },
   "pages-Landing-945097": {
     "sections": [
       {
-        "__resolveType": "deco-sites/landing/sections/myHero.tsx",
+        "__resolveType": "site/sections/myHero.tsx",
         "name": "works!"
       }
     ],
@@ -82,10 +82,10 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+        "__resolveType": "site/sections/Hero.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
+        "__resolveType": "site/sections/Footer.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -95,10 +95,10 @@
     "path": "/example-path",
     "sections": [
       {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+        "__resolveType": "site/sections/Hero.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/SimpleTextList.tsx"
+        "__resolveType": "site/sections/SimpleTextList.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -108,7 +108,7 @@
     "path": "/test",
     "sections": [
       {
-        "__resolveType": "deco-sites/landing/sections/Nav.tsx"
+        "__resolveType": "site/sections/Nav.tsx"
       },
       {
         "font": {
@@ -161,23 +161,23 @@
           "--rounded-badge": "1.9rem",
           "--animation-input": "0.2s"
         },
-        "__resolveType": "deco-sites/landing/sections/Theme/Theme.tsx"
+        "__resolveType": "site/sections/Theme/Theme.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+        "__resolveType": "site/sections/Hero.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+        "__resolveType": "site/sections/ImageWithParagraph.tsx"
       },
       {
         "placement": "right",
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+        "__resolveType": "site/sections/ImageWithParagraph.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/BlogPosts.tsx"
+        "__resolveType": "site/sections/BlogPosts.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
+        "__resolveType": "site/sections/Footer.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -195,32 +195,32 @@
         "__resolveType": "website/sections/Seo/SeoV2.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Header.tsx"
+        "__resolveType": "site/sections/Header.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Hero.tsx"
+        "__resolveType": "site/sections/Hero.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Logos.tsx"
+        "__resolveType": "site/sections/Logos.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+        "__resolveType": "site/sections/ImageWithParagraph.tsx"
       },
       {
         "placement": "right",
-        "__resolveType": "deco-sites/landing/sections/ImageWithParagraph.tsx"
+        "__resolveType": "site/sections/ImageWithParagraph.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/BlogPosts.tsx"
+        "__resolveType": "site/sections/BlogPosts.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Testimonials.tsx"
+        "__resolveType": "site/sections/Testimonials.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Faq.tsx"
+        "__resolveType": "site/sections/Faq.tsx"
       },
       {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
+        "__resolveType": "site/sections/Footer.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -250,7 +250,7 @@
     "caching": {
       "directives": []
     },
-    "__resolveType": "deco-sites/landing/apps/site.ts",
+    "__resolveType": "site/apps/site.ts",
     "firstByteThresholdMS": false
   }
 }
