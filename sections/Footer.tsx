@@ -1,6 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import PoweredByDeco from "./PoweredByDeco.tsx";
+import PoweredByDeco from "../components/PoweredByDeco.tsx";
 
 export interface Column {
   title: string;
