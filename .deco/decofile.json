@@ -3,16 +3,6 @@
     "title": "FAQs",
     "__resolveType": "deco-sites/landing/sections/Faq.tsx"
   },
-  "Preview ": {
-    "sections": {
-      "Footer.tsx": {
-        "__resolveType": "deco-sites/landing/sections/Footer.tsx"
-      },
-      "PoweredByDeco.tsx": {
-        "__resolveType": "deco-sites/landing/sections/PoweredByDeco.tsx"
-      }
-    }
-  },
   "Preview Sections MyHero": {
     "name": "works!",
     "__resolveType": "deco-sites/landing/sections/myHero.tsx"
