@@ -2,8 +2,8 @@
   "imports": {
     "site/": "./",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@ee7c7b3b231740876d44f83fd568be740b06abe3/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.35.23/",
+    "deco/": "https://denopkg.com/deco-cx/deco@fa8b16ca10bfb21d57a53d85455d3efc425807f9/",
+    "apps/": "https://denopkg.com/deco-cx/apps@1e3f7ddbca168a47a199445e5ee6bd695f03325e/",
     "$fresh/": "https://deno.land/x/fresh@1.6.5/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
