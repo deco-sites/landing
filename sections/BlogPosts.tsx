@@ -1,13 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  outline?: boolean;
-}
-
 export interface Post {
   title: string;
   author: string;
@@ -21,7 +14,6 @@ export interface Post {
 export interface Props {
   title?: string;
   description?: string;
-  cta?: CTA;
   posts?: Post[];
 }
 
@@ -31,7 +23,6 @@ const DEFAULT_IMAGE =
 export default function BlogPosts({
   title = "Here's a component for you to showcase your blogposts",
   description = "This subheading is fully editable, remember?",
-  cta = { id: "view-all", href: "/", text: "View all", outline: true },
   posts = [
     {
       title: "Title of blogpost #1",
@@ -77,17 +68,6 @@ export default function BlogPosts({
               {description}
             </p>
           </div>
-          <a
-            key={cta?.id}
-            id={cta?.id}
-            href={cta?.href}
-            target={cta?.href.includes("http") ? "_blank" : "_self"}
-            class={`font-normal btn btn-primary ${
-              cta.outline && "btn-outline"
-            }`}
-          >
-            {cta?.text}
-          </a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {posts?.map((post) => (
