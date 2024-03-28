@@ -66,122 +66,6 @@
   "hero": {
     "__resolveType": "site/sections/Hero.tsx"
   },
-  "pages-Landing-945097": {
-    "sections": [
-      {
-        "__resolveType": "site/sections/myHero.tsx",
-        "name": "works!"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "name": "Landing",
-    "path": "/landing"
-  },
-  "pages-home-5afd25174424": {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "site/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Footer.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-mynewpage-a771a8f0fda6": {
-    "name": "My New Page",
-    "path": "/example-path",
-    "sections": [
-      {
-        "__resolveType": "site/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "site/sections/SimpleTextList.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
-  "pages-test-3c04f2690620": {
-    "name": "Test",
-    "path": "/test",
-    "sections": [
-      {
-        "__resolveType": "site/sections/Nav.tsx"
-      },
-      {
-        "font": {
-          "fonts": [
-            {
-              "family": "Poppins",
-              "variations": [
-                {
-                  "italic": false,
-                  "weight": "400"
-                },
-                {
-                  "italic": false,
-                  "weight": "600"
-                },
-                {
-                  "italic": false,
-                  "weight": "700"
-                }
-              ]
-            }
-          ],
-          "__resolveType": "website/loaders/fonts/googleFonts.ts"
-        },
-        "fonts": [
-          {
-            "fontFamily": "Poppins"
-          }
-        ],
-        "mainColors": {
-          "neutral": "#333333",
-          "primary": "#171717",
-          "warning": "#e08e00",
-          "base-100": "#ffffff",
-          "tertiary": "#404040",
-          "secondary": "#c7c7c7"
-        },
-        "buttonStyle": {
-          "--border-btn": "1px",
-          "--rounded-btn": "0.8rem",
-          "--animation-btn": "0.25s",
-          "--btn-text-case": "normal-case",
-          "--btn-focus-scale": "0.95"
-        },
-        "colorScheme": "light",
-        "otherStyles": {
-          "--tab-border": "1px",
-          "--tab-radius": "0.5rem",
-          "--rounded-box": "1rem",
-          "--rounded-badge": "1.9rem",
-          "--animation-input": "0.2s"
-        },
-        "__resolveType": "site/sections/Theme/Theme.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Hero.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "placement": "right",
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Footer.tsx"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
-  },
   "pages-testing-a5c1b57018a9": {
     "name": "Home",
     "path": "/",
@@ -204,10 +88,10 @@
         "__resolveType": "site/sections/Logos.tsx"
       },
       {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
+        "__resolveType": "site/sections/ImageWithParagraph.tsx",
+        "placement": "right"
       },
       {
-        "placement": "right",
         "__resolveType": "site/sections/ImageWithParagraph.tsx"
       },
       {
