@@ -9,7 +9,7 @@ export default defineApp(async (_req, ctx) => {
   return (
     <>
       {/* Include default fonts and css vars */}
-      <Theme />
+      <Theme colorScheme="any" />
 
       {/* Include Icons and manifest */}
       <Head>
