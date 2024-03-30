@@ -8,7 +8,7 @@
     "colorScheme": "any",
     "buttonStyle": {
       "--border-btn": "1px",
-      "--rounded-btn": "0.2rem",
+      "--rounded-btn": "2rem",
       "--btn-focus-scale": "0.95",
       "--animation-btn": "0.25s"
     },
@@ -200,7 +200,7 @@
     "colorScheme": "any",
     "buttonStyle": {
       "--border-btn": "1px",
-      "--rounded-btn": "0.2rem",
+      "--rounded-btn": "0",
       "--btn-focus-scale": "0.95",
       "--animation-btn": "0.25s"
     },
@@ -212,7 +212,7 @@
       "--tab-radius": "0.5rem"
     },
     "mainColors": {
-      "base-100": "#003232",
+      "base-100": "#F8F9FD",
       "primary": "#3141AC",
       "secondary": "#BADFED",
       "tertiary": "#DECD8F",
