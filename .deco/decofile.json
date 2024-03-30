@@ -55,9 +55,6 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "Vanilla"
-      },
-      {
         "__resolveType": "site/sections/Header.tsx"
       },
       {
@@ -179,7 +176,7 @@
     },
     "mainColors": {
       "base-100": "#FFF7D2",
-      "primary": "#D49679",
+      "primary": "#A73C5A",
       "secondary": "#FFBC55",
       "tertiary": "#FF9900",
       "neutral": "#4F3000",
@@ -262,5 +259,8 @@
       "error": "#d82c0d",
       "info": "#2e72d2"
     }
+  },
+  "Preview /sections/Header.tsx": {
+    "__resolveType": "site/sections/Header.tsx"
   }
 }
