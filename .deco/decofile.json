@@ -178,7 +178,7 @@
       "--tab-radius": "0.5rem"
     },
     "mainColors": {
-      "base-100": "#FFE7D4",
+      "base-100": "#FFF7D2",
       "primary": "#D49679",
       "secondary": "#FFBC55",
       "tertiary": "#FF9900",
@@ -193,7 +193,7 @@
       "fonts": [
         {
           "variations": [],
-          "family": "Josefin Slab"
+          "family": "Special Elite"
         }
       ]
     }
