@@ -1,4 +1,5 @@
 import type { ComponentChildren, JSX } from "preact";
+import Script, { type Props } from "./script.tsx";
 
 function Dot({ index, children }: {
   index: number;
@@ -15,8 +16,24 @@ function Dot({ index, children }: {
   );
 }
 
-function Slider(props: JSX.IntrinsicElements["ul"]) {
-  return <ul data-slider {...props} />;
+function Slider({
+  rootId,
+  scroll = "smooth",
+  interval,
+  infinite = false,
+  ...props
+}: JSX.IntrinsicElements["ul"] & Props) {
+  return (
+    <>
+      <ul data-slider {...props} />
+      <Script
+        rootId={rootId}
+        scroll={scroll}
+        interval={interval}
+        infinite={infinite}
+      />
+    </>
+  );
 }
 
 function Item({

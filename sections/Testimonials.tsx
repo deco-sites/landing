@@ -1,9 +1,8 @@
-import Icon from "../components/ui/Icon.tsx";
-import Slider from "../components/ui/Slider.tsx";
-import SliderJS from "../islands/SliderJS.tsx";
-import { useId } from "../sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import Icon from "../components/ui/Icon.tsx";
+import Slider from "../components/ui/Slider/index.tsx";
+import { useId } from "../sdk/useId.ts";
 
 /**
  * @titleBy alt
@@ -203,32 +202,29 @@ function Carousel(props: Props) {
       <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
         {title}
       </h2>
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
-        {slides?.map((slide, index) => {
-          let params = {};
-          if (slide.content && "description" in slide.content) {
-            params = { promotion_name: slide.content.alt };
-          }
-          return (
-            <Slider.Item
-              index={index}
-              class="carousel-item max-w-[600px] w-full"
-            >
-              <SliderItem
-                slide={slide}
-                id={`${id}::${index}`}
-              />
-            </Slider.Item>
-          );
-        })}
+      <Slider
+        class="carousel carousel-center w-full col-span-full row-span-full gap-6"
+        rootId={id}
+        interval={interval && interval * 1e3}
+        infinite
+      >
+        {slides?.map((slide, index) => (
+          <Slider.Item
+            index={index}
+            class="carousel-item max-w-[600px] w-full"
+          >
+            <SliderItem
+              slide={slide}
+              id={`${id}::${index}`}
+            />
+          </Slider.Item>
+        ))}
       </Slider>
 
       <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
       </div>
-
-      <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>
   );
 }
