@@ -186,6 +186,9 @@
       ]
     }
   },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
+  },
   "decohub": {
     "__resolveType": "site/apps/decohub.ts"
   },
@@ -262,8 +265,5 @@
     "theme": {
       "__resolveType": "Neutral"
     }
-  },
-  "blog": {
-    "__resolveType": "decohub/apps/blog.ts"
   }
 }
