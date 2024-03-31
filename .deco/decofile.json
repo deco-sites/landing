@@ -208,7 +208,8 @@
         "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b"
       },
       {
-        "__resolveType": "site/sections/Hero.tsx"
+        "__resolveType": "site/sections/Hero.tsx",
+        "cta": []
       },
       {
         "__resolveType": "site/sections/Logos.tsx"
@@ -265,5 +266,14 @@
     "theme": {
       "__resolveType": "Neutral"
     }
+  },
+  "Preview /sections/Hero.tsx": {
+    "__resolveType": "site/sections/Hero.tsx"
+  },
+  "Preview /sections/hero-2.tsx": {
+    "__resolveType": "site/sections/hero-2.tsx"
+  },
+  "Preview /sections/hero-1.tsx": {
+    "__resolveType": "site/sections/hero-1.tsx"
   }
 }
