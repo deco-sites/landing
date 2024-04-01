@@ -275,5 +275,27 @@
   },
   "Preview /sections/hero-1.tsx": {
     "__resolveType": "site/sections/hero-1.tsx"
+  },
+  "app-decohub%2Fapps%2Fhtmx.ts": {
+    "__resolveType": "decohub/apps/htmx.ts",
+    "version": "1.9.11"
+  },
+  "app-site%2Fapps%2Fdecohub.ts": {
+    "__resolveType": "site/apps/decohub.ts",
+    "apps": []
+  },
+  "app-site%2Fapps%2Fsite.ts": {
+    "__resolveType": "site/apps/site.ts",
+    "routes": [],
+    "seo": {
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s",
+      "type": "website"
+    },
+    "global": [],
+    "caching": {
+      "directives": []
+    },
+    "firstByteThresholdMS": false
   }
 }
