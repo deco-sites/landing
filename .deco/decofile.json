@@ -71,6 +71,15 @@
   "Preview /sections/Header.tsx": {
     "__resolveType": "site/sections/Header.tsx"
   },
+  "Preview /sections/Hero.tsx": {
+    "__resolveType": "site/sections/Hero.tsx"
+  },
+  "Preview /sections/hero-1.tsx": {
+    "__resolveType": "site/sections/hero-1.tsx"
+  },
+  "Preview /sections/hero-2.tsx": {
+    "__resolveType": "site/sections/hero-2.tsx"
+  },
   "Preview Sections MyHero": {
     "name": "works!",
     "__resolveType": "site/sections/myHero.tsx"
@@ -186,6 +195,28 @@
       ]
     }
   },
+  "app-decohub%2Fapps%2Fhtmx.ts": {
+    "__resolveType": "decohub/apps/htmx.ts",
+    "version": "1.9.11"
+  },
+  "app-site%2Fapps%2Fdecohub.ts": {
+    "__resolveType": "site/apps/decohub.ts",
+    "apps": []
+  },
+  "app-site%2Fapps%2Fsite.ts": {
+    "__resolveType": "site/apps/site.ts",
+    "routes": [],
+    "seo": {
+      "titleTemplate": "%s",
+      "descriptionTemplate": "%s",
+      "type": "website"
+    },
+    "global": [],
+    "caching": {
+      "directives": []
+    },
+    "firstByteThresholdMS": false
+  },
   "blog": {
     "__resolveType": "decohub/apps/blog.ts"
   },
@@ -194,6 +225,10 @@
   },
   "hero": {
     "__resolveType": "site/sections/Hero.tsx"
+  },
+  "htmx": {
+    "__resolveType": "decohub/apps/htmx.ts",
+    "version": "1.9.11"
   },
   "pages-testing-a5c1b57018a9": {
     "name": "Home",
@@ -249,7 +284,11 @@
       "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/f5603dbc-ee36-4864-aaf3-ea52b257d5b2",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/9c94b074-ae4d-4b63-a20b-7d48ce69971a"
     },
-    "global": [],
+    "global": [
+      {
+        "__resolveType": "htmx/sections/htmx.tsx"
+      }
+    ],
     "routes": [
       {
         "__resolveType": "website/loaders/pages.ts"
@@ -266,40 +305,5 @@
     "theme": {
       "__resolveType": "Neutral"
     }
-  },
-  "Preview /sections/Hero.tsx": {
-    "__resolveType": "site/sections/Hero.tsx"
-  },
-  "Preview /sections/hero-2.tsx": {
-    "__resolveType": "site/sections/hero-2.tsx"
-  },
-  "Preview /sections/hero-1.tsx": {
-    "__resolveType": "site/sections/hero-1.tsx"
-  },
-  "app-decohub%2Fapps%2Fhtmx.ts": {
-    "__resolveType": "decohub/apps/htmx.ts",
-    "version": "1.9.11"
-  },
-  "app-site%2Fapps%2Fdecohub.ts": {
-    "__resolveType": "site/apps/decohub.ts",
-    "apps": []
-  },
-  "app-site%2Fapps%2Fsite.ts": {
-    "__resolveType": "site/apps/site.ts",
-    "routes": [],
-    "seo": {
-      "titleTemplate": "%s",
-      "descriptionTemplate": "%s",
-      "type": "website"
-    },
-    "global": [],
-    "caching": {
-      "directives": []
-    },
-    "firstByteThresholdMS": false
-  },
-  "htmx": {
-    "__resolveType": "decohub/apps/htmx.ts",
-    "version": "1.9.11"
   }
 }
