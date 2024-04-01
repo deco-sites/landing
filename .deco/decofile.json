@@ -297,5 +297,9 @@
       "directives": []
     },
     "firstByteThresholdMS": false
+  },
+  "htmx": {
+    "__resolveType": "decohub/apps/htmx.ts",
+    "version": "1.9.11"
   }
 }
