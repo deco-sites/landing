@@ -62,7 +62,7 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="inline-block text-5xl lg:text-[80px] leading-none font-medium"
+              class="inline-block lg:text-[80px] text-4xl leading-none font-medium"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
