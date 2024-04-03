@@ -305,5 +305,11 @@
     "theme": {
       "__resolveType": "Neutral"
     }
+  },
+  "Preview /sections/Faq.tsx": {
+    "__resolveType": "site/sections/Faq.tsx"
+  },
+  "Preview /sections/Footer.tsx": {
+    "__resolveType": "site/sections/Footer.tsx"
   }
 }

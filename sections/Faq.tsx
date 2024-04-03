@@ -10,7 +10,7 @@ export interface CTA {
 
 export interface Question {
   title: string;
-  /** @format html */
+  /** @format rich-text */
   answer: string;
 }
 

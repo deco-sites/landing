@@ -14,7 +14,7 @@ export interface Items {
 export interface Subscribe {
   title: string;
   description: string;
-  /** @format html */
+  /** @format rich-text */
   instructions: string;
 }
 
