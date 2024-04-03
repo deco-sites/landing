@@ -1,6 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import PoweredByDeco from "../components/PoweredByDeco.tsx";
 
 export interface Column {
   title: string;
@@ -31,6 +30,11 @@ export interface Props {
   };
   links?: Column[];
   subscribe?: Subscribe;
+  madeWith?: {
+    label?: string;
+    src?: ImageWidget;
+    href?: string;
+  };
   copyright?: string;
   bottomLinks?: Items[];
   social?: Social[];
@@ -81,6 +85,12 @@ export default function Footer({
     instructions:
       "By subscribing you agree to with our <a href='/' target='_blank' class='link'>Privacy Policy</a> and provide consent to receive updates from our company.",
   },
+  madeWith = {
+    label: "Made with",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
+    href: "https://deco.cx",
+  },
   copyright = "© 2024 deco.cx. All rights reserved.",
   bottomLinks = [
     { label: "Privacy Policy", href: "/" },
@@ -96,9 +106,9 @@ export default function Footer({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm pt-16">
+    <div class="lg:container lg:mx-auto md:max-w-6xl mx-4 pt-16 text-sm">
       <div class="flex flex-col gap-20">
-        <div class="flex flex-col lg:flex-row justify-between gap-6">
+        <div class="flex flex-col gap-6 justify-between lg:flex-row">
           <div>
             <Image
               src={logo.src || ""}
@@ -113,7 +123,7 @@ export default function Footer({
                 <h4 class="font-semibold mb-4">{link.title}</h4>
                 {link.items?.map((item) => (
                   <a
-                    class="link no-underline hover:underline block py-1"
+                    class="block hover:underline link no-underline py-1"
                     href={item.href}
                   >
                     {item.label}
@@ -132,7 +142,7 @@ export default function Footer({
                   placeholder="Enter your email"
                   class="flex-auto input input-bordered input-primary"
                 />
-                <button type="submit" class="btn btn-outline font-normal">
+                <button type="submit" class="btn btn-outline font-normal" aria-label="Subscribe">
                   Subscribe
                 </button>
               </div>
@@ -144,13 +154,19 @@ export default function Footer({
             </form>
           </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-4 justify-between py-8 border-t border-primary items-center lg:items-center">
-          <div class="flex flex-col lg:flex-row gap-4 lg:gap-6 items-center lg:items-center">
-            <a href="https://deco.cx/" target="_blank">
-              <PoweredByDeco />
+        <div class="border-primary border-t flex flex-col gap-4 items-center justify-between lg:flex-row lg:items-center py-8">
+          <div class="flex flex-col gap-4 items-center lg:flex-row lg:gap-6">
+            <a href={madeWith?.href} class="flex items-center gap-2" target="_blank">
+              <span>{madeWith?.label}</span>
+              <Image
+                src={madeWith?.src || ""}
+                width={100}
+                height={28}
+                alt={madeWith?.label}
+              />
             </a>
             <span>{copyright}</span>
-            <div class="flex gap-2 lg:gap-6 justify-between">
+            <div class="flex gap-2 justify-between lg:gap-6">
               {bottomLinks?.map((item) => (
                 <a class="link" href={item.href} target="_blank">
                   {item.label}
