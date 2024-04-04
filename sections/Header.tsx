@@ -73,7 +73,7 @@ export default function Haader({
         </a>
 
         <label
-          class="cursor-pointer lg:hidden pt-6 px-3 relative z-40"
+          class="cursor-pointer lg:hidden pt-6 relative z-40"
           for="menu-mobile"
         >
           <input class="hidden peer" type="checkbox" id="menu-mobile" />
