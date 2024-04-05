@@ -68,6 +68,12 @@
       "info": "#2e72d2"
     }
   },
+  "Preview /sections/Faq.tsx": {
+    "__resolveType": "site/sections/Faq.tsx"
+  },
+  "Preview /sections/Footer.tsx": {
+    "__resolveType": "site/sections/Footer.tsx"
+  },
   "Preview /sections/Header.tsx": {
     "__resolveType": "site/sections/Header.tsx"
   },
@@ -305,11 +311,5 @@
     "theme": {
       "__resolveType": "Neutral"
     }
-  },
-  "Preview /sections/Faq.tsx": {
-    "__resolveType": "site/sections/Faq.tsx"
-  },
-  "Preview /sections/Footer.tsx": {
-    "__resolveType": "site/sections/Footer.tsx"
   }
 }
