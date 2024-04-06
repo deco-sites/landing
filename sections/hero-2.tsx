@@ -1,14 +1,12 @@
-
 interface Props {
   /**
-  * @description The description of name.
-  */
+   * @description The description of name.
+   */
   name?: string;
   /**
-  * @description The color of the component.
-  */
+   * @description The color of the component.
+   */
   color?: string;
-
 }
 
 export default function Section({ name = "Capy", color = "green" }: Props) {
@@ -17,7 +15,11 @@ export default function Section({ name = "Capy", color = "green" }: Props) {
       <h2 class="text-2xl font-semibold mb-4">Fancy Component</h2>
       <div class="space-y-4">
         <button class={"btn btn-" + color}>Click me</button>
-        <input type="text" class={"input input-bordered border-" + color + "-200"} placeholder="Type something" />
+        <input
+          type="text"
+          class={"input input-bordered border-" + color + "-200"}
+          placeholder="Type something"
+        />
         <div class={"alert bg-" + color + "-500"}>
           {name}
         </div>

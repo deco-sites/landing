@@ -106,7 +106,7 @@ export default function Footer({
   ],
 }: Props) {
   return (
-    <div class="lg:container lg:mx-auto md:max-w-6xl mx-4 pt-16 text-sm">
+    <div class="lg:container mx-auto md:max-w-6xl px-4 pt-16 text-sm">
       <div class="flex flex-col gap-20">
         <div class="flex flex-col gap-6 justify-between lg:flex-row">
           <div>
@@ -140,9 +140,13 @@ export default function Footer({
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  class="flex-auto input input-bordered input-primary"
+                  class="w-full input input-bordered input-primary"
                 />
-                <button type="submit" class="btn btn-outline font-normal" aria-label="Subscribe">
+                <button
+                  type="submit"
+                  class="btn btn-outline font-normal"
+                  aria-label="Subscribe"
+                >
                   Subscribe
                 </button>
               </div>
@@ -156,7 +160,11 @@ export default function Footer({
         </div>
         <div class="border-primary border-t flex flex-col gap-4 items-center justify-between lg:flex-row lg:items-center py-8">
           <div class="flex flex-col gap-4 items-center lg:flex-row lg:gap-6">
-            <a href={madeWith?.href} class="flex items-center gap-2" target="_blank">
+            <a
+              href={madeWith?.href}
+              class="flex items-center gap-2"
+              target="_blank"
+            >
               <span>{madeWith?.label}</span>
               <Image
                 src={madeWith?.src || ""}
