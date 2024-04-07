@@ -1,4 +1,8 @@
 {
+  "Desktop": {
+    "__resolveType": "website/matchers/device.ts",
+    "desktop": true
+  },
   "Faq - default": {
     "title": "FAQs",
     "__resolveType": "site/sections/Faq.tsx"
@@ -39,6 +43,10 @@
         }
       ]
     }
+  },
+  "Mobile": {
+    "__resolveType": "website/matchers/device.ts",
+    "mobile": true
   },
   "Neutral": {
     "__resolveType": "site/sections/Theme/Theme.tsx",
@@ -297,7 +305,6 @@
       "type": "website",
       "title": "Landing",
       "jsonLDs": [],
-      "canonical": "https://fashion.deco.site",
       "noIndexing": false,
       "description": "Improve your page performance with deco.cx",
       "titleTemplate": "Landing | deco.cx",
