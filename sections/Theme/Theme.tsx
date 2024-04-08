@@ -486,7 +486,7 @@ const ButtonStylesPreview = () => {
 
 const TextColorsPreview = () => {
   const textColorsClasses = [
-    "",
+    "text-[initial]",
     "text-primary",
     "text-secondary",
     "text-accent",
