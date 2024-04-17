@@ -333,5 +333,11 @@
     "theme": {
       "__resolveType": "Neutral"
     }
+  },
+  "Preview /sections/ImageWithParagraph.tsx": {
+    "__resolveType": "site/sections/ImageWithParagraph.tsx"
+  },
+  "Preview site/sections/ImageWithParagraph.tsx": {
+    "__resolveType": "site/sections/ImageWithParagraph.tsx"
   }
 }
