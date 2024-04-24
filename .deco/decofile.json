@@ -262,17 +262,12 @@
     "path": "/",
     "sections": [
       {
-        "__resolveType": "site/sections/Header.tsx"
-      },
-      {
-        "__resolveType": "website/sections/Seo/SeoV2.tsx",
-        "title": "Landing",
-        "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/43999173-3786-4a4b-be09-5d7313d0bc3b"
+        "__resolveType": "Header"
       },
       {
         "__resolveType": "site/sections/Hero.tsx",
-        "cta": [],
         "title": "<p>Click here to tweak this text however you want.</p>",
+        "cta": [],
         "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
       },
       {
@@ -295,7 +290,7 @@
         "__resolveType": "site/sections/Faq.tsx"
       },
       {
-        "__resolveType": "site/sections/Footer.tsx"
+        "__resolveType": "Footer"
       }
     ],
     "__resolveType": "website/pages/Page.tsx"
@@ -339,5 +334,19 @@
   },
   "Preview site/sections/ImageWithParagraph.tsx": {
     "__resolveType": "site/sections/ImageWithParagraph.tsx"
+  },
+  "Header": {
+    "__resolveType": "site/sections/Header.tsx",
+    "navigation": {
+      "links": [],
+      "buttons": []
+    }
+  },
+  "Footer": {
+    "__resolveType": "site/sections/Footer.tsx",
+    "links": [],
+    "bottomLinks": [],
+    "social": [],
+    "subscribe": {}
   }
 }
