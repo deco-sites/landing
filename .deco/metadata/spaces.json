@@ -125,65 +125,7 @@
       "name": "Releases",
       "pinned": true,
       "icon": "rocket",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "stack",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "component",
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "<div class=\"contents text-base-700\" id=\"header-releases::releases::rocket::releases::%7B%7D\" />",
-                "id": "releases::releases::rocket::releases::%7B%7D",
-                "componentName": "component",
-                "componentState": {
-                  "id": "releases::releases::rocket::releases::%7B%7D"
-                }
-              }
-            ],
-            "width": 100,
-            "activeItemIndex": 0
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
+      "layout": [],
       "tabs": {
         "releases::releases::rocket::releases::%7B%7D": {
           "name": "releases",
@@ -497,7 +439,7 @@
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "activeItemIndex": 0,
+                "activeItemIndex": 1,
                 "content": [
                   {
                     "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Properties::list::Properties::%7B%7D",
@@ -506,6 +448,17 @@
                     "componentName": "component",
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Properties::list::Properties::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  },
+                  {
+                    "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ffresh.config.ts%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ffresh.config.ts%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ffresh.config.ts%22%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -521,12 +474,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fdeno.json%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fdeno.json%22%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fdeno.json%22%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -555,44 +508,32 @@
             "value": null
           }
         },
-        "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "world",
+        "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ffresh.config.ts%22%7D": {
+          "name": "Code",
+          "icon": "code",
           "accepts": "function",
           "render": "function",
-          "viewId": "Preview",
-          "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/fresh.config.ts"
+          },
+          "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ffresh.config.ts%22%7D",
           "state": {
-            "__signal": null
+            "__signal": "error"
           }
-        }
-      }
-    },
-    {
-      "id": "Staging",
-      "name": "Staging",
-      "pinned": false,
-      "icon": "rocket",
-      "layout": [
-        {
-          "i": "Staging::Environment:undefined:rocketEnvironment{}",
-          "w": 24,
-          "h": 24,
-          "x": 0,
-          "y": 0,
-          "moved": false,
-          "static": false
-        }
-      ],
-      "tabs": {
-        "Staging::Environment:undefined:rocketEnvironment{}": {
-          "name": "Environment",
-          "icon": "rocket",
+        },
+        "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fdeno.json%22%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
           "render": "function",
-          "viewId": "Environment",
-          "id": "Staging::Environment:undefined:rocketEnvironment{}",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/deno.json"
+          },
+          "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fdeno.json%22%7D",
           "state": {
-            "__signal": null
+            "__signal": "error"
           }
         }
       }
@@ -667,11 +608,11 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 33.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "activeItemIndex": 1,
+                "activeItemIndex": 0,
                 "content": [
                   {
                     "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHero.tsx.json::Preview::world::Preview::%7B%7D",
@@ -683,7 +624,17 @@
                     },
                     "isClosable": true,
                     "reorderEnabled": true
-                  },
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 33.33333333333333,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
                   {
                     "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D",
                     "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D\" />",
@@ -699,7 +650,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 33.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -747,7 +698,8 @@
           "viewId": "Code",
           "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHero.tsx.json::Code::code::Code::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHero.tsx.json::Terminal::terminal::Terminal::%7B%7D": {
@@ -839,6 +791,32 @@
           }
         }
       }
+    },
+    {
+      "id": "deco-records-space",
+      "name": "Records",
+      "pinned": true,
+      "icon": "database",
+      "layout": [],
+      "tabs": {
+        "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D": {
+          "name": "Deco Records",
+          "icon": "database",
+          "render": "function",
+          "viewId": "Deco Records",
+          "id": "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "tags": [
+        {
+          "label": "BETA",
+          "color": "positive"
+        }
+      ],
+      "category": "Content"
     }
   ]
 }
