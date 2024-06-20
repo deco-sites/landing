@@ -1,4 +1,4 @@
-import { useScript } from "apps/utils/useScript.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 import type { ComponentChildren, JSX } from "preact";
 
 export interface Props {
