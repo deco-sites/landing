@@ -25,7 +25,8 @@
       "__resolveType": "site/sections/BlogPosts.tsx"
     },
     {
-      "__resolveType": "site/sections/Testimonials.tsx"
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true
     },
     {
       "__resolveType": "site/sections/Faq.tsx"
