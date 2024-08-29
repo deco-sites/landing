@@ -16,11 +16,14 @@ export default function Site(
 ): App<Manifest, Props, [
   WebsiteApp,
 ]> {
+  const newState = {
+    ...state, global: state.theme ? [state.theme, ...state.global ?? []] : state.global
+  }
   return {
-    state,
+    state: newState,
     manifest,
     dependencies: [
-      website(state),
+      website(newState),
     ],
   };
 }
