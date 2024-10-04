@@ -10,8 +10,10 @@ export interface CTA {
 
 export interface Props {
   title?: string;
+  titlePlacement?: "left" | "right" | "center";
   /** @format textarea */
   description?: string;
+  descriptionPlacement?: "left" | "right" | "center" | "justify";
   tagline?: string;
   image?: ImageWidget;
   placement?: "left" | "right";
@@ -20,6 +22,7 @@ export interface Props {
     top?: boolean;
     bottom?: boolean;
   };
+  ctaPlacement?: "left" | "right" | "center";
 }
 
 const PLACEMENT = {
@@ -27,13 +30,21 @@ const PLACEMENT = {
   right: "flex-col md:flex-row",
 };
 
+const CTA_PLACEMENT = {
+  left: "start",
+  right: "end",
+  center: "center",
+};
+
 const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/772e246e-1959-46ac-a309-3f25ab20af6f";
 
 export default function ImageWithParagraph({
   title = "Here's an intermediate size heading you can edit",
+  titlePlacement = "left",
   description =
     "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  descriptionPlacement = "left",
   tagline = "Tagline",
   image = DEFAULT_IMAGE,
   placement = "left",
@@ -42,6 +53,7 @@ export default function ImageWithParagraph({
     { id: "change-me-1", href: "/", text: "Change me", style: "Outline" },
     { id: "change-me-2", href: "/", text: "Change me", style: "Ghost" },
   ],
+  ctaPlacement = "left",
 }: Props) {
   return (
     <div class="lg:container md:max-w-6xl lg:mx-auto mx-4 text-sm">
@@ -68,13 +80,13 @@ export default function ImageWithParagraph({
           <p class="text-sm font-semibold">
             {tagline}
           </p>
-          <p class="text-4xl leading-snug">
+          <p class="text-4xl leading-snug" style={`text-align:${titlePlacement}`}>
             {title}
           </p>
-          <p class="leading-normal">
+          <p class="leading-normal" style={`text-align:${descriptionPlacement}`}>
             {description}
           </p>
-          <div class="flex gap-3 pt-4">
+          <div class={`flex gap-3 pt-4 justify-${CTA_PLACEMENT[ctaPlacement]}`}>
             {cta?.map((item) => (
               <a
                 key={item?.id}
